@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden; /* Para evitar que el contenedor se desplace horizontalmente */
     background-image: url("AngelFondo.jpeg"); /* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Para cubrir toda la ventana del navegador */
+   /* Para cubrir toda la ventana del navegador */
 }
 .container {
     text-align: center;

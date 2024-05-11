@@ -1,0 +1,89 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Para evitar que el contenedor se desplace horizontalmente */
+    background-image: url("AngelFondo.jpeg"); /* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Para cubrir toda la ventana del navegador */
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+    width: 80%; /* Ancho del contenedor */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    height: 80%; /* Altura del contenedor */
+    max-height: 600px; /* Altura máxima del contenedor */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    background: linear-gradient(to bottom right, #000000, #ffffff, #000000, #ffffff, #000000); /* Degradado de blanco a negro, movimiento diagonal de arriba izquierda a abajo derecha */
+    background-size: 300% 300%; /* Tamaño del fondo para permitir la transición */
+    animation: gradientMove 10s linear infinite; /* Aplica la animación al gradiente */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: top left; /* Posición inicial del gradiente */
+    }
+    100% {
+        background-position: bottom right; /* Posición final del gradiente */
+    }
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover; 
+    
+}
+
+
+.profile h1 {
+    color: #333;
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: burningAnimation 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 30px #2238ff, 0 0 40px #000000, 0 0 50px #2238ff, 0 0 60px #000000, 0 0 70px #2238ff, 0 0 80px #000000, 0 0 90px #2238ff, 0 0 100px #000000, 0 0 150px #2238ff;
+}
+
+@keyframes burningAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
+}
+.profile {
+    margin: 40px;
+}
+
+.social-links {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.social-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 10%;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: #2238ff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Agrega más estilos de color según sea necesario */
+
